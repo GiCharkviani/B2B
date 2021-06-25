@@ -1,0 +1,49 @@
+.container {
+    margin-top:7%;
+    height: 15cm;
+    width: 40%;
+    display: flex!important;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    justify-content: center;
+    align-items: center;
+    overflow: auto!important;
+}
+@media only screen and (min-width:1000px) and (max-width:1500px)
+  {
+    .container{
+      width: 40%;
+    }
+}
+@media only screen and (min-width:800px) and (max-width:1000px)
+  {
+    .container{
+      width: 50%;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:800px)
+  {
+    .container{
+      width: 60%;
+    }
+}
+@media only screen and  (max-width:300px)
+  {
+    .container{
+      width: 60%;
+    }
+}
+.row{
+    text-align: center;
+    overflow: auto!important;
+}
+mat-vertical-stepper{
+    background-color: rgba(244, 246, 248, 0.938)!important;
+    font-size: 1.5em;
+    width: 30vw;
+}
+@media only screen and (max-width:875px){
+    mat-label{
+        font-size:3vw;
+    }
+}

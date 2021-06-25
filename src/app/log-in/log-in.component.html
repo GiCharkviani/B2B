@@ -1,0 +1,37 @@
+<div class="container">
+  
+   
+    <div class="row mb-5">
+        <div class="col-12 text-center mb-3" style="color:#006D77; font-size: 2vh; font-weight: bold;">
+            <p style="line-height:2em">
+                Only Business have access.
+                <br>
+                Please, Sign-in or Registrate
+            </p>
+        </div>
+        <div class="col-12">
+            <label for="inp" class="inp">
+                <input [(ngModel)]='email'  name="email" type="text" id="inp" placeholder="&nbsp;">
+                <span class="label">Email</span>
+                <span class="focus-bg"></span>
+              </label>
+        </div>
+        <div class="col-12 mt-4">
+            <label for="inp" class="inp">
+                <input [(ngModel)]='password' name="password"  type="password" id="inp" placeholder="&nbsp;">
+                <span class="label">Password</span>
+                <span class="focus-bg"></span>
+            </label>
+        </div>
+        <small *ngIf='error' style="color: red">{{errorMessage.message}}</small>
+        <div class="col-12 mt-4">
+            <button mat-stroked-button color="accent"  (click)='login()' >Log In</button>
+        </div>
+        <div class="col-12 mt-4">
+            <button routerLink='/registrate' mat-raised-button color="warn">Registrate</button>
+        </div>
+        
+    </div>
+    
+</div>
+

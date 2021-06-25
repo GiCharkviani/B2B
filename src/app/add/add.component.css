@@ -1,0 +1,327 @@
+ /* ფორმის */
+ @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+ .container{
+   margin-top:10px;
+ }
+
+ .row {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+ }
+ form{
+   text-align: center;
+ }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="radio"] + label,
+select option,
+select {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+input:focus {
+  outline: 0;
+  border-color: #006D77;
+}
+textarea{
+  border-radius: 5px;
+  border-color: grey;
+}
+textarea:focus{
+  outline: 0;
+  border-color: #02656e;
+  border-color: #02656e;
+  transition: 0.35s ease-in-out;
+
+}
+input:focus + .input-icon i {
+  color: #006D77;
+}
+input:focus + .input-icon:after {
+  border-right-color: #006D77;
+}
+
+.input-group {
+  margin-bottom: 1em;
+  zoom: 1;
+}
+.input-group:before,
+.input-group:after {
+  content: "";
+  display: table;
+}
+.input-group:after {
+  clear: both;
+}
+.input-group-icon {
+  position: relative;
+}
+.input-group-icon input {
+  padding-left: 4.4em;
+}
+.input-group-icon .input-icon {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 3.4em;
+  height: 3.4em;
+  line-height: 3.4em;
+  text-align: center;
+  pointer-events: none;
+}
+.input-group-icon .input-icon:after {
+  position: absolute;
+  top: 0.6em;
+  bottom: 0.6em;
+  left: 3.4em;
+  display: block;
+  border-right: 1px solid #e5e5e5;
+  content: "";
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.input-group-icon .input-icon i {
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.container {
+  max-width: 38em;
+  padding: 1em 3em 2em 3em;
+  margin: 0em auto;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+.row {
+  zoom: 1;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.col-half {
+  padding-right: 10px;
+  float: left;
+  width: 50%;
+}
+.col-half:last-of-type {
+  padding-right: 0;
+}
+.col-third {
+  padding-right: 10px;
+  float: left;
+  width: 33.33333333%;
+}
+.col-third:last-of-type {
+  padding-right: 0;
+}
+@media only screen and (max-width: 540px) {
+  .col-half {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+
+
+/*ღილაკის*/
+
+.goBack{
+  background-color: #FFDDD2!important;
+  color: #006D77;
+}
+.roomsToAdd{
+  background-color: #83c5be!important;
+}
+.addRoom{
+  background-color: #E29578!important;
+}
+button {
+  background: #006D77;
+  height: 50px;
+  width: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 1.5em;
+  font-family: 'Cookie', cursive;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+button #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+button:hover {
+  background: transparent;
+}
+
+button:hover #circle {
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
+
+
+
+/*ტექსტისთვის*/
+
+
+.text {
+  display: flex;
+  justify-content: center;
+  margin-bottom:20px;
+  text-align: center;
+  font-weight: 500px;
+  color: #006D77;
+  transition: transform 0.3s ease-in-out;
+  font-family: 'Source Code Pro', monospace!important;
+}
+.text:hover {
+  transform: rotateX(35deg), translateY(-50%);
+}
+.text:hover span {
+  color: #ccc;
+}
+.text:hover span:nth-child(odd) {
+  transform: skewY(15deg);
+}
+.text:hover span:nth-child(even) {
+  transform: skewY(-15deg);
+  background-color: #f9f9f9;
+  color: #a6a6a6;
+}
+
+.text > span {
+  display: block;
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.text > span:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+/*reserved*/
+
+
+
+
+ul.ks-cboxtags {
+  list-style: none;
+  padding: 20px;
+}
+ul.ks-cboxtags li{
+display: inline;
+}
+ul.ks-cboxtags li label{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .9);
+  border: 2px solid rgba(139, 139, 139, .3);
+  color: #adadad;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\f067";
+  transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+  content: "\f00c";
+  transform: rotate(-360deg);
+  transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+  border: 2px solid #1bdbf8;
+  background-color: #E29578;
+  color: #fff;
+  transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+position: absolute;
+opacity: 0;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+border: 2px solid #83C5BE;
+}

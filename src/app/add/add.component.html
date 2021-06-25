@@ -1,0 +1,126 @@
+<hr>
+<div class="container">
+    <form (ngSubmit)='onSubmit()' #hotelsAddForm='ngForm'>
+
+
+         <!--სასტუმროს ძირითადი ინფორმაციის დამატება-->
+        <div class="row" *ngIf='!roomsActive'>
+            <div class="text">
+                <span>A</span>
+                <span>D</span>
+                <span>D</span>
+                <span> </span>
+                <span>H</span>
+                <span>O</span>
+                <span>T</span>
+                <span>E</span>
+                <span>L</span>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="text" placeholder="Enter Your Hotel's name" [(ngModel)]='hotel.name' name="name" />
+                <div class="input-icon"><i class="fas fa-heading"></i></div>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="text"  [(ngModel)]='hotel.city' name="city" placeholder="Enter City Name" />
+                <div class="input-icon"><i class="fas fa-city"></i></div>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="text" name="street" placeholder="Enter Street Name" [(ngModel)]='hotel.street' />
+                <div class="input-icon"><i class="fas fa-street-view"></i></div>
+            </div>
+            <small style="color: grey;">Maximum 5 will be Visible</small>
+            <div class="input-group input-group-icon">
+                <input max="5" min="1" type="number" id="number" name="number" type="number" placeholder="Enter Rating In Number" [(ngModel)]='hotel.rating' />
+                <div class="input-icon"><i class="fas fa-star-half-alt"></i></div>
+            </div>
+            <!--ფოტოები-->
+            <small style="color: grey;">The first pic will be on the background of card</small>
+            <div class="input-group input-group-icon">
+                <input type="text" name="pic" placeholder="Enter Picture Url" [(ngModel)]='hotel.pic' type="text" />
+                <div class="input-icon"><i class="fas fa-camera"></i></div>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="text" name="pic1" placeholder="Enter Picture Url" [(ngModel)]='hotel.pic1' type="text" type="text" />
+                <div class="input-icon"><i class="fas fa-camera"></i></div>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="text" type="text" name="pic2" placeholder="Enter Picture Url" [(ngModel)]='hotel.pic2' type="text" />
+                <div class="input-icon"><i class="fas fa-camera"></i></div>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="text" type="text" name="pic3" placeholder="Enter Picture Url" [(ngModel)]='hotel.pic3' type="text" />
+                <div class="input-icon"><i class="fas fa-camera"></i></div>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="text" type="text" name="pic4" placeholder="Enter Picture Url" [(ngModel)]='hotel.pic4' type="text" />
+                <div class="input-icon"><i class="fas fa-camera"></i></div>
+            </div>
+            <textarea name="description" name="description" id="description" cols="30" rows="10"
+                [(ngModel)]='hotel.description' placeholder="enter description"></textarea>
+            <br>
+
+            <button (click)='makeRoomsActive()' type="button" class="btn btn-info mt-5 roomsToAdd"><span class="noselect"></span> Add Rooms<div id="circle"></div>
+            </button>
+        </div>
+
+
+
+        <!--ოთახების დამატება-->
+        <div class="row" *ngIf='roomsActive'>
+            <div class="text">
+                <span>A</span>
+                <span>D</span>
+                <span>D</span>
+                <span> </span>
+                <span>R</span>
+                <span>O</span>
+                <span>O</span>
+                <span>M</span>
+                <span>S</span>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="number" placeholder="Enter Number of Room" [(ngModel)]='rooms.numberi' name="roomNum" />
+                <div class="input-icon"><i class="fas fa-sort-numeric-up-alt"></i></div>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="number" placeholder="number of places" [(ngModel)]='rooms.places' name="placeNum" />
+                <div class="input-icon"><i class="fas fa-bed"></i></div>
+            </div>
+
+            <div class="input-group input-group-icon">
+                <input type="text" name="street" placeholder="Price Policy" [(ngModel)]='rooms.pp' />
+                <div class="input-icon"><i class="fas fa-money-check-alt"></i></div>
+            </div>
+
+            <textarea name="description" name="description" id="description" cols="30" rows="10" [(ngModel)]='rooms.genInfo' placeholder="Enter general information of room"></textarea>
+
+            <div *ngIf='roomAdded' class="mt-2 text-success lead" style="transition:all .5s ease; font-size:2vw">+{{counter}} {{counter > 1?'Rooms':'Room'}} {{counter > 1?'Have':'has'}} been added</div>
+           
+                <ul class="ks-cboxtags">
+                  <li><input type="checkbox" [(ngModel)]='rooms.reserved' id="checkboxOne" name="reserved" (click)='datePicking()' value="Rainbow Dash"><label for="checkboxOne">Reserved</label></li>                 
+                </ul>            
+               
+               <input *ngIf='datePick' name="date" [(ngModel)]='rooms.date'  type="date" class="mb-5">
+
+            <br>
+            
+            <div class="row">
+                <div class="col-12">
+                    <button (click)='addRoom()' type="button" class="btn btn-info  addRoom"><span class="noselect"></span><i class="fas fa-plus fa-lg"></i><div id="circle"></div>
+                    </button>
+                </div>
+                <div class="col-12">
+                    <button (click)='makeRoomsDective()' type="button" class="btn btn-info goBack mt-2"><span class="noselect"></span><i class="fas fa-long-arrow-alt-left fa-lg"></i><div id="circle"></div>
+                    </button>
+                </div>
+            </div>
+        
+
+            
+        </div>
+
+<hr>
+        <button type="submit" class="btn btn-info mt-5 addHotel"><span class="noselect"></span> Add Hotel<div id="circle"></div>
+            </button>
+    </form>
+</div>

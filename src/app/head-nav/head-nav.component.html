@@ -1,0 +1,26 @@
+<ul class="nav">
+
+
+
+    <button routerLink="./home" mat-flat-button title="Home">
+        <mat-icon>home</mat-icon>
+    </button>
+
+    <button routerLink="./add" *ngIf='checkLog.buttonCheck' mat-flat-button title="Log In" title="Add">
+        <mat-icon>note_add</mat-icon>
+    </button>
+
+    <button mat-flat-button id='out' routerLink="./log-in" *ngIf='!checkLog.buttonCheck' title="Log In">
+        <mat-icon>person</mat-icon>
+    </button>
+
+    <button routerLink="./contact" mat-flat-button title="Contact">
+        <mat-icon>email</mat-icon>
+    </button>
+
+    <button (click)='signOut()' id="leave" *ngIf='checkLog.buttonCheck' routerLink="./home" mat-flat-button title="Log Out">
+        <i class="fas fa-sign-out-alt fa-lg"></i>
+    </button>
+
+
+</ul>
