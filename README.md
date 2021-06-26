@@ -1,5 +1,7 @@
 ## [Web-Page Link](https://gicharkviani.github.io/B2B/)
 
+*Run Compodoc from CMD: npm run compodoc
+
 # BTB
 ![Routing Module](./imgForReadMe/Screenshot_3.png)
 ![Routing Module](./imgForReadMe/Screenshot_2.png)
