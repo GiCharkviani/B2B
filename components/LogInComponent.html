@@ -1,0 +1,873 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>btb documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">btb documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>LogInComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/log-in/log-in.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-log-in</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./log-in.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./log-in.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#auth">auth</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#checkLog">checkLog</a>
+                            </li>
+                            <li>
+                                <a href="#email">email</a>
+                            </li>
+                            <li>
+                                <a href="#error">error</a>
+                            </li>
+                            <li>
+                                <a href="#errorMessage">errorMessage</a>
+                            </li>
+                            <li>
+                                <a href="#panelOpenState">panelOpenState</a>
+                            </li>
+                            <li>
+                                <a href="#password">password</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#login">login</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(auth: AngularFireAuth, checkLog: <a href="../injectables/CheckLogService.html">CheckLogService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/log-in/log-in.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>auth</td>
+                                                  
+                                                        <td>
+                                                                    <code>AngularFireAuth</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>checkLog</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CheckLogService.html" target="_self" >CheckLogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="login"></a>
+                    <span class="name">
+                        <b>
+                            login
+                        </b>
+                        <a href="#login"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>login()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/log-in/log-in.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">src/app/log-in/log-in.component.ts:18</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="auth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            auth</b>
+                            <a href="#auth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>AngularFireAuth</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/log-in/log-in.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="checkLog"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            checkLog</b>
+                            <a href="#checkLog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/CheckLogService.html" target="_self" >CheckLogService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/log-in/log-in.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="email"></a>
+                        <span class="name">
+                            <b>
+                            email</b>
+                            <a href="#email"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/log-in/log-in.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="error"></a>
+                        <span class="name">
+                            <b>
+                            error</b>
+                            <a href="#error"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/log-in/log-in.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errorMessage"></a>
+                        <span class="name">
+                            <b>
+                            errorMessage</b>
+                            <a href="#errorMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/log-in/log-in.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="panelOpenState"></a>
+                        <span class="name">
+                            <b>
+                            panelOpenState</b>
+                            <a href="#panelOpenState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/log-in/log-in.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="password"></a>
+                        <span class="name">
+                            <b>
+                            password</b>
+                            <a href="#password"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/log-in/log-in.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import {AngularFireAuth} from &#x27;@angular/fire/auth&#x27;
+import { CheckLogService } from &#x27;../check-log.service&#x27;;
+
+@Component({
+  selector: &#x27;app-log-in&#x27;,
+  templateUrl: &#x27;./log-in.component.html&#x27;,
+  styleUrls: [&#x27;./log-in.component.css&#x27;]
+})
+export class LogInComponent implements OnInit {
+  panelOpenState &#x3D; false;
+  email!:string;
+  password!:string;
+  error!:boolean;
+  errorMessage!:any;
+  constructor(public auth: AngularFireAuth, public checkLog: CheckLogService) {}
+
+  ngOnInit(): void {
+ 
+  }
+
+  login(){
+    console.log(&#x60;Email: ${this.email} \n Password: ${this.password}&#x60;);
+    this.auth.signInWithEmailAndPassword(this.email, this.password).catch(error &#x3D;&gt; {
+      console.log(error);
+      localStorage.setItem(&#x27;error&#x27;,&#x27;1&#x27;);
+      this.error &#x3D; true;
+      this.errorMessage &#x3D; error;
+    }).then(result &#x3D;&gt; {
+      console.log(result);
+      if(!localStorage.getItem(&#x27;error&#x27;)){
+       
+        localStorage.setItem(&#x27;loggedIn&#x27;,&#x27;1&#x27;);
+        window.location.reload();
+        
+      }else if(localStorage.getItem(&#x27;error&#x27;)){
+        localStorage.removeItem(&#x27;error&#x27;);
+      }
+     
+    })
+    let check &#x3D; localStorage.getItem(&#x27;loggedIn&#x27;)
+    if(check){
+      this.checkLog.buttonCheck &#x3D; true;
+      console.log(true)
+    }else {
+      this.checkLog.buttonCheck &#x3D; false;
+      console.log(false)
+    }
+    
+  }
+  
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+  
+   
+    &lt;div class&#x3D;&quot;row mb-5&quot;&gt;
+        &lt;div class&#x3D;&quot;col-12 text-center mb-3&quot; style&#x3D;&quot;color:#006D77; font-size: 2vh; font-weight: bold;&quot;&gt;
+            &lt;p style&#x3D;&quot;line-height:2em&quot;&gt;
+                Only Business have access.
+                &lt;br&gt;
+                Please, Sign-in or Registrate
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-12&quot;&gt;
+            &lt;label for&#x3D;&quot;inp&quot; class&#x3D;&quot;inp&quot;&gt;
+                &lt;input [(ngModel)]&#x3D;&#x27;email&#x27;  name&#x3D;&quot;email&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;inp&quot; placeholder&#x3D;&quot;&amp;nbsp;&quot;&gt;
+                &lt;span class&#x3D;&quot;label&quot;&gt;Email&lt;/span&gt;
+                &lt;span class&#x3D;&quot;focus-bg&quot;&gt;&lt;/span&gt;
+              &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-12 mt-4&quot;&gt;
+            &lt;label for&#x3D;&quot;inp&quot; class&#x3D;&quot;inp&quot;&gt;
+                &lt;input [(ngModel)]&#x3D;&#x27;password&#x27; name&#x3D;&quot;password&quot;  type&#x3D;&quot;password&quot; id&#x3D;&quot;inp&quot; placeholder&#x3D;&quot;&amp;nbsp;&quot;&gt;
+                &lt;span class&#x3D;&quot;label&quot;&gt;Password&lt;/span&gt;
+                &lt;span class&#x3D;&quot;focus-bg&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;small *ngIf&#x3D;&#x27;error&#x27; style&#x3D;&quot;color: red&quot;&gt;{{errorMessage.message}}&lt;/small&gt;
+        &lt;div class&#x3D;&quot;col-12 mt-4&quot;&gt;
+            &lt;button mat-stroked-button color&#x3D;&quot;accent&quot;  (click)&#x3D;&#x27;login()&#x27; &gt;Log In&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-12 mt-4&quot;&gt;
+            &lt;button routerLink&#x3D;&#x27;/registrate&#x27; mat-raised-button color&#x3D;&quot;warn&quot;&gt;Registrate&lt;/button&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./log-in.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.container {
+    margin-top:7%;
+    height: 15cm;
+    width: 32%;
+    display: flex!important;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width:1000px) and (max-width:1500px)
+  {
+    .container{
+      width: 40%;
+    }
+}
+@media only screen and (min-width:800px) and (max-width:1000px)
+  {
+    .container{
+      width: 50%;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:800px)
+  {
+    .container{
+      width: 60%;
+    }
+}
+@media only screen and  (max-width:300px)
+  {
+    .container{
+      width: 60%;
+    }
+}
+
+.row{
+    text-align: center;
+}
+
+
+[mat-stroked-button]{
+    color: #006D77!important;
+}
+[mat-stroked-button]:hover{
+    background-color: #EDF6F9;
+    color: #83C5BE!important;
+}
+
+
+
+button{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .inp .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+  .inp .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .inp input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+  }
+  .inp input:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  }
+  .inp input:not(:-moz-placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  .inp input:not(:-ms-input-placeholder) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  .inp input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  .inp input:focus {
+    background: rgba(237, 246, 249, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+  }
+  .inp input:focus + .label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  .inp input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+  }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">         <div class="row mb-5">        <div class="col-12 text-center mb-3" style="color:#006D77; font-size: 2vh; font-weight: bold;">            <p style="line-height:2em">                Only Business have access.                <br>                Please, Sign-in or Registrate            </p>        </div>        <div class="col-12">            <label for="inp" class="inp">                <input [(ngModel)]=\'email\'  name="email" type="text" id="inp" placeholder="&nbsp;">                <span class="label">Email</span>                <span class="focus-bg"></span>              </label>        </div>        <div class="col-12 mt-4">            <label for="inp" class="inp">                <input [(ngModel)]=\'password\' name="password"  type="password" id="inp" placeholder="&nbsp;">                <span class="label">Password</span>                <span class="focus-bg"></span>            </label>        </div>        <small *ngIf=\'error\' style="color: red">{{errorMessage.message}}</small>        <div class="col-12 mt-4">            <button mat-stroked-button color="accent"  (click)=\'login()\' >Log In</button>        </div>        <div class="col-12 mt-4">            <button routerLink=\'/registrate\' mat-raised-button color="warn">Registrate</button>        </div>            </div>    </div></div>'
+    var COMPONENTS = [{'name': 'AddComponent', 'selector': 'app-add'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BodyComponent', 'selector': 'app-body'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'FootComponent', 'selector': 'app-foot'},{'name': 'HeadNavComponent', 'selector': 'app-head-nav'},{'name': 'LogInComponent', 'selector': 'app-log-in'},{'name': 'RegisterComponent', 'selector': 'app-register'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'LogInComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LogInComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
