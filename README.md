@@ -53,4 +53,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - zone.js : ~0.11.3
 - firebase : ^7.0 || ^8.0
 
-**For more Information, visit to this project's documentation.**
+**For more Information, visit to this project's documentation branch.**
